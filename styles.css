@@ -6,10 +6,10 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    }
-    
-    /* Цветовая тема */
-    :root {
+  }
+  
+  /* Цветовая тема */
+  :root {
     --primary-color: #FF6B6B;
     --secondary-color: #FFD93D;
     --accent-color: #7367F0;
@@ -18,61 +18,61 @@ body {
     --subtext-color: #545454;
     --bg-color: #F5F5F5;
     --light-text-color: #fff;
-    }
-    
-    /* Стили для шапки */
-    header {
+  }
+  
+  /* Стили для шапки */
+  header {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    
-    .header-content {
+  }
+  
+  .header-content {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    }
-    
-    .logo {
+  }
+  
+  .logo {
     display: flex;
     align-items: center;
-    }
-    
-    .logo a {
+  }
+  
+  .logo a {
     font-size: 24px;
     font-weight: 700;
     text-decoration: none;
     color: var(--light-text-color);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    }
-    
-    .logo img {
+  }
+  
+  .logo img {
     height: 40px;
     margin-right: 10px;
-    }
-    
-    .nav-links {
+  }
+  
+  .nav-links {
     display: flex;
     justify-content: center;
-    }
-    
-    .nav-links a {
+  }
+  
+  .nav-links a {
     color: var(--light-text-color);
     text-decoration: none;
     margin: 0 10px;
     padding: 10px 20px;
     border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    
-    .nav-links a:hover {
+  }
+  
+  .nav-links a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--light-text-color);
-    }
-    
-    .cta-btn {
+  }
+  
+  .cta-btn {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     color: var(--light-text-color);
     text-decoration: none;
@@ -80,26 +80,26 @@ body {
     border-radius: 30px;
     transition: box-shadow 0.3s ease;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-    
-    .cta-btn:hover {
+  }
+  
+  .cta-btn:hover {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    }
-    
-    /* Стили для основного контента */
-    main {
+  }
+  
+  /* Стили для основного контента */
+  main {
     padding: 80px 20px;
-    }
-    
-    .hero {
+  }
+  
+  .hero {
     color: var(--light-text-color);
     padding: 80px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    }
-    
-    .hero::before {
+  }
+  
+  .hero::before {
     content: "";
     position: absolute;
     top: -10%;
@@ -109,36 +109,114 @@ body {
     background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
     z-index: -1;
     animation: glow 10s infinite alternate;
-    }
-    
-    h2 {
+  }
+  
+  h2 {
     font-size: 24px;
     font-weight: 700;
     text-align: center;
-    }
-    
-    @keyframes glow {
+  }
+  
+  @keyframes glow {
     0% {
-    transform: scale(1);
+      transform: scale(1);
     }
     100% {
-    transform: scale(1.2);
+      transform: scale(1.2);
     }
-    }
-    
-    .hero h1 {
+  }
+  
+  .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-    
-    .hero p {
+  }
+  
+  .hero p {
     font-size: 24px;
     margin-bottom: 40px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    }
-    
-    .cta-btn {
+  }
+  
+  /* Стили для секций */
+  section {
+    padding: 80px 20px;
+  }
+  
+  .features,
+  .courses,
+  .pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .feature ul,
+.course-card ul,
+.pricing-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.price {
+    font-size: 24px;
+    font-weight: 700; /* Жирный шрифт */
+    margin-bottom: 20px;
+  }
+.feature li,
+.course-card li,
+.pricing-card li {
+  margin-bottom: 20px;
+  text-align: center;
+}
+  
+  .feature,
+  .course-card,
+  .pricing-card {
+    flex: 1 1 300px;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+  .pr-card_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 300px;
+    max-width: 400px;
+    background-color: #7F7F7F; /* Более светлый серый цвет */
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    color: var(--light-text-color); /* Белый текст */
+    list-style: none; /* Удаление точек */
+  }
+  .pr-card_1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+  }
+  
+  .pr-card_1 li {
+    margin-bottom: 20px;
+  }
+  
+  .pr-card_1 .cta-btn,
+  .pricing-card .cta-btn {
+    display: inline-block;
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     color: var(--light-text-color);
     text-decoration: none;
@@ -146,217 +224,177 @@ body {
     border-radius: 30px;
     transition: box-shadow 0.3s ease;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-    
-    .cta-btn:hover {
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    }
-    
-    /* Стили для секций */
-    section {
-    padding: 80px 20px;
-    }
-    
-    .features,
-    .courses,
-    .pricing {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 40px;
-    justify-content: center;
-    }
-    
-    .feature,
-    .course-card,
-    .pricing-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    }
-    
-    .feature:hover,
-    .course-card:hover,
-    .pricing-card:hover {
+    width: fit-content;
+    align-self: center; /* Центрирование кнопок */
+  }
+  
+  
+  .feature:hover,
+  .course-card:hover,
+  .pricing-card:hover {
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
-    }
-    
-    .feature img,
-    .course-card img {
-    max-width: 23%;
+  }
+  
+  .feature img,
+  .course-card img {
+    max-width: 20%;
     height: auto;
     margin-bottom: 20px;
     border-radius: 10px;
-    }
+    margin-left: 40%;
     
-    .pricing-card.featured {
+  }
+  
+  .pricing-card.annual {
+    flex: 1 1 300px;
+    max-width: 400px;
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     color: var(--light-text-color);
-    transform: scale(1.1);
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
-    }
-    
-    .pricing-card ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-    }
-    
-    .pricing-card li {
-    margin-bottom: 10px;
-    }
-    
-    .price {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    }
-    
-    .testimonials {
+    list-style-type: none;
+  }
+  
+  .testimonials {
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
     padding: 80px 20px;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
+  }
+  
+  .testimonials::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    z-index: -1;
+    animation: glow 10s infinite alternate;
+    border-radius: 20px;
+  }
+  
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .testimonial:hover {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial h4 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .course-link {
+    text-decoration: none;
+    outline: none;
+    color: #101010;
+  }
+  
+  /* Стили для подвала */
+  footer {
+    background-color: #101010;
+    color: var(--light-text-color);
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-links a {
+    color: var(--light-text-color);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+  }
+  
+  .social-links img {
+    margin-top: 10px;
+    transition: filter 0.3s ease;
+  }
+  
+  #vk {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #tg {
+    width: 50px;
+    height: 30px;
+  }
+  
+  .social-links img:hover {
+    filter: invert(1);
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      text-align: center;
     }
-
-
-
-    .testimonials::before {
-        content: "";
-        position: absolute;
-        top: -10%;
-        left: -10%;
-        width: 120%;
-        height: 120%;
-        background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
-        z-index: -1;
-        animation: glow 10s infinite alternate;
-        }
-        
-        .testimonial {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 40px;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 20px;
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.3s ease, transform 0.3s ease;
-        }
-        
-        .testimonial:hover {
-        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
-        transform: translateY(-5px);
-        }
-        
-        .testimonial img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin-bottom: 20px;
-        }
-        
-        .testimonial p {
-        font-size: 18px;
-        text-align: center;
-        margin-bottom: 10px;
-        }
-        
-        .testimonial h4 {
-        font-size: 16px;
-        font-weight: 700;
-        }
-        
-        .course-link {
-        text-decoration: none;
-        outline: none;
-        color: #101010;
-        }
-        
-        /* Стили для подвала */
-        footer {
-        background-color: #101010;
-        color: var(--light-text-color);
-        padding: 40px 20px;
-        text-align: center;
-        }
-        
-        .footer-links a {
-        color: var(--light-text-color);
-        text-decoration: none;
-        margin: 0 10px;
-        transition: color 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-        color: var(--secondary-color);
-        }
-        
-        .social-links a {
-        margin: 0 10px;
-        }
-        
-        .social-links img {
-        margin-top: 10px;
-        transition: filter 0.3s ease;
-        }
-        
-        #vk {
-        width: 30px;
-        height: 30px;
-        }
-        
-        #tg {
-        width: 50px;
-        height: 30px;
-        }
-        
-        .social-links img:hover {
-        filter: invert(1);
-        }
-        
-        /* Адаптивность */
-        @media (max-width: 768px) {
-        .header-content {
-        flex-direction: column;
-        text-align: center;
-        }
-        
-        
-        Copy code
-        .logo {
-            margin-bottom: 20px;
-        }
-        
-        .nav-links {
-            flex-wrap: wrap;
-        }
-        
-        .nav-links a {
-            margin: 5px 10px;
-        }
-        
-        .hero h1 {
-            font-size: 36px;
-        }
-        
-        .hero p {
-            font-size: 18px;
-        }
-        
-        .features,
-        .courses,
-        .pricing {
-            grid-template-columns: 1fr;
-        }
-        
-        .pricing-card.featured {
-            transform: none;
-        }
-        }
-        
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+    }
+  
+    .nav-links a {
+      margin: 5px 10px;
+    }
+  
+    .hero h1 {
+      font-size: 36px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+    }
+  
+    .features,
+    .courses,
+    .pricing {
+      grid-template-columns: 1fr;
+    }
+  
+    .pricing-card.annual {
+      grid-column: 1 / -1;
+      list-style-type: none;
+    }
+  }
